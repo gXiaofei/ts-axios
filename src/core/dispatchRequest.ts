@@ -40,5 +40,6 @@ function transformHeaders(config: AxiosRequestConfig): any {
 // 转化data为string时尝试转成对象
 function transformResponseData(res: AxiosResponse): AxiosResponse {
   res.data = transformResponse(res.data)
+
   return res
 }
